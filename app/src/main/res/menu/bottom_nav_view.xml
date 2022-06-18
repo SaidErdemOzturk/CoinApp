@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/bottom_nav_ic_takip"
+        android:icon="@drawable/ic_takip"
+        android:title="Takip Edilenler"/>
+    <item
+        android:id="@+id/bottom_nav_ic_tumu"
+        android:icon="@drawable/ic_tumu"
+        android:title="Tüm Coinler" />
+</menu>

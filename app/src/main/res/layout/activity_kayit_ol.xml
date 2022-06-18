@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".KayitOlActivity">
+
+    <EditText
+        android:id="@+id/adEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="91dp"
+        android:ems="10"
+        android:hint="Adınız :"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/emailEditText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:hint="Email :"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="@+id/adEditText"
+        app:layout_constraintTop_toBottomOf="@+id/adEditText" />
+
+    <EditText
+        android:id="@+id/sifreEditText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="9dp"
+        android:ems="10"
+        android:hint="Şifre :"
+        android:inputType="textPassword"
+        app:layout_constraintStart_toStartOf="@+id/emailEditText2"
+        app:layout_constraintTop_toBottomOf="@+id/emailEditText2" />
+
+    <EditText
+        android:id="@+id/sifreEditText22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:hint="Şifreyi Tekrar Girin :"
+        android:inputType="textPassword"
+        app:layout_constraintStart_toStartOf="@+id/sifreEditText2"
+        app:layout_constraintTop_toBottomOf="@+id/sifreEditText2" />
+
+    <Button
+        android:id="@+id/buttonKayit00"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="39dp"
+        android:onClick="kayitOl2"
+        android:text="kayıt ol"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sifreEditText22" />
+
+    <Button
+        android:id="@+id/buttonGeriDon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="9dp"
+        android:layout_marginBottom="40dp"
+        android:onClick="geriDon"
+        android:text="Geri Dön"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
